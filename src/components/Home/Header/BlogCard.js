@@ -36,7 +36,7 @@ export default function BlogCard({
         {isUser && (
           <div className="flex p-4 justify-end">
             <MdModeEditOutline
-              className=" text-2xl m-2"
+              className=" text-2xl m-2 hover:text-emerald-700"
               onClick={handleEdit}
             ></MdModeEditOutline>
             <MdDelete
