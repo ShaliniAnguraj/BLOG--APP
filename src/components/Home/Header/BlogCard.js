@@ -20,7 +20,7 @@ export default function BlogCard({
   };
   const handleDelete = async () => {
     try {
-      const { data } = await axios.delete(`/api/v1/blog/delete-blog/${id}`);
+      const { data } = await axios.delete(`https://blog-ok12.onrender.com/api/v1/blog/delete-blog/${id}`);
       if (data?.success) {
         alert("Blog Deleted");
         window.location.reload();
@@ -57,9 +57,8 @@ export default function BlogCard({
               </p>
             </div>
             <div>
-            <p className="mt-2 mx-3 text-black">{username}</p>
-            </div>
-            <div>
+            <p className="mt-6 mx-3 text-black">{username}</p>
+
               <p className="mt-2 mx-3">{time}</p>
             </div>
           </div>
