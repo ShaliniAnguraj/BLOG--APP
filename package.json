@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "proxy": "https://blog-ok12.onrender.com/api/v1/blog/all-blog",
+  "proxy": "http://localhost:4455",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
